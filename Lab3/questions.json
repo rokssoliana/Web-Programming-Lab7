@@ -1,0 +1,66 @@
+{
+  "single": [
+    {
+      "question": "Що таке HTML?",
+      "options": ["Мова розмітки", "Мова програмування", "База даних"],
+      "answer": 0
+    },
+    {
+      "question": "Для чого використовується CSS?",
+      "options": ["Створення стилів", "Програмування", "Робота з базами"],
+      "answer": 0
+    },
+    {
+      "question": "Що таке JavaScript?",
+      "options": ["Мова програмування", "Таблиця стилів", "Редактор"],
+      "answer": 0
+    },
+    {
+      "question": "Який тег створює посилання?",
+      "options": ["a", "link", "href"],
+      "answer": 0
+    }
+  ],
+
+  "multiple": [
+    {
+      "question": "Які технології належать до frontend?",
+      "options": ["HTML", "CSS", "Python", "JavaScript"],
+      "answer": [0,1,3]
+    },
+    {
+      "question": "Які теги є семантичними?",
+      "options": ["header", "div", "footer", "section"],
+      "answer": [0,2,3]
+    },
+    {
+      "question": "Що можна робити за допомогою JavaScript?",
+      "options": ["Маніпулювати DOM", "Створювати стилі", "Обробляти події", "Робити анімації"],
+      "answer": [0,2,3]
+    },
+    {
+      "question": "Які існують типи input?",
+      "options": ["text", "radio", "checkbox", "fetch"],
+      "answer": [0,1,2]
+    }
+  ],
+
+  "text": [
+    {
+      "question": "Розшифруйте CSS",
+      "answer": "Cascading Style Sheets"
+    },
+    {
+      "question": "Розшифруйте HTML",
+      "answer": "HyperText Markup Language"
+    },
+    {
+      "question": "Як називається мова стилів для веб-сторінок?",
+      "answer": "CSS"
+    },
+    {
+      "question": "Яка мова використовується для інтерактивності на сайтах?",
+      "answer": "JavaScript"
+    }
+  ]
+}

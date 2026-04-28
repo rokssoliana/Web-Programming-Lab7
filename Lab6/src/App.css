@@ -1,0 +1,70 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.board-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  grid-template-rows: repeat(3, 80px);
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.square {
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  border: 2px solid #333;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+.square:hover {
+  background: #f0f0f0;
+}
+
+.square.highlight {
+  background: #aaffaa; /* Колір для виграшної лінії [cite: 44] */
+}
+
+.status {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.score-board {
+  background: #eee;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.reset-btn {
+  margin-top: 20px;
+  padding: 10px 25px;
+  font-size: 1rem;
+  background-color: #646cff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reset-btn:hover {
+  background-color: #535bf2;
+}

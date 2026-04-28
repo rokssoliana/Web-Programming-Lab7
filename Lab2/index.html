@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Інтернет-магазин</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header" id="home">
+        <div class="logo">
+            <h1>TechStore</h1>
+        </div>
+
+        <div class="cart">
+            🛒 <span id="cart-count">0</span>
+            <button id="clear-cart">Очистити кошик</button>
+        </div>
+    </header>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="nav">
+        <ul class="nav-list">
+            <li><a href="#home">Головна</a></li>
+            <li><a href="#catalog">Каталог</a></li>
+            <li><a href="#contacts">Контакти</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="main">
+
+        <!-- ===== FILTERS ===== -->
+        <aside class="filters">
+
+            <h2>Фільтри</h2>
+
+            <!-- Категорія -->
+            <div class="filter-group">
+                <label for="category">Категорія:</label>
+                <select id="category">
+                    <option value="all">Усі</option>
+                    <option value="Ноутбуки">Ноутбуки</option>
+                    <option value="Смартфони">Смартфони</option>
+                    <option value="Аксесуари">Аксесуари</option>
+                </select>
+            </div>
+
+            <!-- Колір -->
+            <div class="filter-group">
+                <label for="color">Колір:</label>
+                <select id="color">
+                    <option value="all">Усі</option>
+                    <option value="Чорний">Чорний</option>
+                    <option value="Білий">Білий</option>
+                    <option value="Сірий">Сірий</option>
+                    <option value="Срібний">Срібний</option>
+                    <option value="Синій">Синій</option>
+                    <option value="Зелений">Зелений</option>
+                    <option value="Жовтий">Жовтий</option>
+                </select>
+            </div>
+
+            <!-- Ціна -->
+            <div class="filter-group">
+                <label>Ціна:</label>
+                <input type="number" id="min-price" placeholder="Мінімальна">
+                <input type="number" id="max-price" placeholder="Максимальна">
+                <button id="apply-filters">Застосувати</button>
+            </div>
+
+        </aside>
+
+        <!-- ===== PRODUCTS ===== -->
+        <section class="products" id="catalog">
+
+            <h2>Товари</h2>
+
+            <div id="products-container" class="products-grid">
+                <!-- Картки додаються через JS -->
+            </div>
+
+            <p id="no-products" class="no-products hidden">
+                Товари не знайдено
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- ===== MODAL ===== -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="contacts">
+        <p>Контактна інформація: info@techstore.ua</p>
+        <div class="socials">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
